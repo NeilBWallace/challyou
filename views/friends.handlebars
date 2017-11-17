@@ -1,0 +1,31 @@
+ <h2 class="page-header">Users</h2>
+ 
+
+<h2 class="page-header">Users</h2>
+ 
+
+ 
+<body>
+			<div>
+			<h1>Users</h1>
+			<p>
+				{{#each friends}}
+				
+				<div class="user">
+					
+					<p><a href="edit/{{this.id}}/">{{this.username}}</a></p>
+					<p><a href="delete/{{this._id}}">delete</a></p>
+
+				</div>
+				
+				{{/each}}
+			</p>
+		</div>
+	</body>
+
+
+	{{#each friend_request}}
+<p>{{user}} {{status}}{{_id}}<a href="/make_friends/{{user}}/{{_id}}" class="btn btn-xs btn-warning">Accept Friend Request</a>
+
+{{/each}}
+
