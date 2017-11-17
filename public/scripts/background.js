@@ -8,11 +8,11 @@ function changeBG(){
          ]
     
     if(counter === imgs.length) counter = 0;
-    $(".b").css("background-image", imgs[counter]);
+    $("body").css("background-image", imgs[counter]);
 
     counter++;
 }
   
-  setInterval(changeBG, 8000);
+  setInterval(changeBG, 7000);
 
 
