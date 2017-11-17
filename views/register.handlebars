@@ -2,15 +2,14 @@
     
          
       <div class="container">
-             <div id="wrapper"> 
-                <div id="register_div" class="teal lighten-1">
-                  <h4>Register</h4>
+                   <h4>Register</h4>
                       {{#if errors}}
                        {{#each errors}}
                         <div class="alert alert-danger">{{msg}}</div>
                       {{/each}}
                         {{/if}}
-
+   <div class="loginBox">
+              <div class="glass"></div>
                       <form method="post" action="/users/register">
                         <div class="input-field">
                           <label>Name</label>
@@ -36,9 +35,7 @@
                       </form>
                       </div>
                  </div>
-   </div>
-          
-        </div>
+ 
   
     <div class="parallax"><img src="../background1.jpg" alt="Unsplashed background img 1"></div>
 
