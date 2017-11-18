@@ -1,70 +1,93 @@
- <style>
+<style type="text/css">
+.home_page_top {
+    background-image: url('../home_page_top.png');
+   background-repeat: no-repeat;
+   background-size:100%;
+
+}{{!--  --}}
+
 
 .flex-container {
   display: flex;
   justify-content: center;
+ 
 } 
 </style>
+
+<body class="home_page_top">
+
+
+ <div class="middle-container">
+
+ </div>
+ <div class="right-container " style="width:10%;"></div>
+        <a class="add-button" href="/edit_profile"><span class=" scnd-font-color"><img style="z-index:5" src="../user_setup.png"></span></a>         
+</div>
+
+
 	<div class="flex-container">
-                       <div class="left-container" style="width:30%">
-                       <div class="menu-box block"> <!-- MENU BOX (LEFT-CONTAINER) -->
-                             <h2 class="titular">MENU BOX</h2>
-                                <ul class="menu-box-menu">
-                                    <li>
-                                        <a class="menu-box-tab" href="/admin"><span class="icon fontawesome-envelope scnd-font-color"></span>Admin</a>                            
-                                    </li>
-                                    <li>
-                                        <a class="menu-box-tab" href="/edit_profile"><span class="icon fontawesome-envelope scnd-font-color"></span>Edit Profile</a>                            
-                                    </li>
-                                    <li>
-                                        <a class="menu-box-tab" href="/find_friends"><span class="icon entypo-paper-plane scnd-font-color"></span>Find Friends</a>                            
-                                    </li>
-                                    <li>
-                                        <a class="menu-box-tab" href="/my_hobbies/{{username}}"><span class="icon entypo-calendar scnd-font-color"></span>Hobbies</a>                            
-                                    </li>
-                                     <!--<div class="menu-box-number">5</div> -->
-                                    <li>
-                                        <a class="menu-box-tab" href="/groups"><span class="icon entypo-cog scnd-font-color"></span>Groups</a>
-                                    </li>
-                                </ul>
-                          </div>   
+                       <div class="left-container" style="width:25%">
                     </div>
 
                                   <!-- MIDDLE-CONTAINER -->
-            <div class="middle-container " style="width:33%">
+            <div class="middle-container " style="width:50%">
                 <div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
-                    <a class="add-button" href="#28"><span class="icon entypo-plus scnd-font-color"></span></a>
-                    <div class="profile-picture big-profile-picture clear">  
+                      <div class="profile-picture big-profile-picture clear">  
                         <img width="150px" alt="picture" src="{{pic}}" />
                     </div>
                     <h1 class="user-name">{{user.username}}</h1>
                     <div class="profile-description">
-                        <p class="scnd-font-color">{{#each Hobbies}} {{hobby}}{{/each}}</p>
-                    </div>
+                     </div>
+                        <ul class="profile-options horizontal-list">
+                                        <li><a class="comments" href="#40"><p><span class="icon  scnd-font-color"><img src="../location.png"></span>Location</li></p></a>
+                        <li><a class="comments" href="#40"><p><span class="icon  scnd-font-color"><img src="../star.png"></span>Mastered Challenges</li></p></a>
+                        <li><a class="comments" href="#40"><p><span class="icon  scnd-font-color"><img src="../half_star.png"></span>Open Challenges</li></p></a>
+                     </ul>
+                
                     <ul class="profile-options horizontal-list">
-                        <li><a class="comments" href="#40"><p><span class="icon  scnd-font-color"></span></li></p></a>
-                        <li><a class="views" href="#41"><p><span class="icon fontawesome-eye-open scnd-font-color"></span></li></p></a>
-                        <li><a class="likes" href="/my_friends"><p><span class="icon fa fa-users scnd-font-color"></span>{{Buddies.length}}</li></p></a>
-                    </ul>
+                        <li><a class="likes" href="/my_friends"><p><span class="icon fa scnd-font-color"><img src="../friends.png"></span>friends <p>{{Buddies.length}}</p></li></p></a>
+                        <li><a class="views" href="/my_hobbies/{{username}}"><p><span class="icon  scnd-font-color"><img src="../heart.png"></span>       <p class="scnd-font-color">{{#each Hobbies}} {{hobby}}{{/each}}</p>
+                        <li><a class="views" href="/groups"><p><span class="icon  scnd-font-color"><img src="../clubs.png"></span>  Clubs     <p class="scnd-font-color"></p>
+         
+                </li></p></a>
+                     </ul>
                 </div>
             </div>
 
 
-                                <!-- RIGHT-CONTAINER -->
-            <div class="right-container " style="width:30%">
-                             <div class="menu-box block"> 
-                               <h2 class="titular">Challenge You</h2>
-                               <ul class="menu-box-menu">
-                                   <li>
-                                      <a class="menu-box-tab" href="/videos"><sapn class="icon entypo-chart-line scnd-font-color"></sapn>Challenges</a>
-                                  </li>
-                                   <li>
-                                      <a class="menu-box-tab" href="/describe_challenge"><sapn class="icon entypo-chart-line scnd-font-color"></sapn>Create Challenge</a>
-                                   </li>
-                                 </ul>
-                             </div>
-             </div>
-
+          
            
  </div>
+
+<style type="text/css">
+.bgimg {
+    background-image: url('../bottom_green_banner.png');
+}
+.body_image {
+    background-image: url('../cy_index.png');
+}
+
+</style>
+
+    <div class="flex-container ">
+
+    <div class="left-container" style="width:25%">
+                    
     
+    </div>
+     <div class="middle-container bgimg" style="width:50%">
+       <ul class="profile-options horizontal-list">
+                        <li><a class="likes" href="/videos"><p><span class="icon fa scnd-font-color"><img src="../challenges.png"></span>Challenges <p></p></li></p></a>
+                 <li>
+                            <a class="likes" href="/describe_challenge"><sapn class="icon  scnd-font-color"><img src="../record_challenge.png"></sapn>Create Challenge</a>
+                        </li>
+                                   <li><a class="views" href="/groups"><p><span class="icon  scnd-font-color"><img src="../user.png"></span>    <p class="scnd-font-color"></p>
+         
+                </li></p></a>
+                     </ul>
+    </div>
+    <div class="right-container" style="width:25%">
+    
+    </div>
+    </div>
+</body>

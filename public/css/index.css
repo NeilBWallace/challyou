@@ -81,7 +81,7 @@ a {
 	}
 
 h1, h2, p, a, span{
-	color: #fff;
+	color: black;
 }
 	.scnd-font-color {
 		color: #9099b7;
@@ -307,10 +307,18 @@ h1, h2, p, a, span{
 		width: 300px;
 	}
 		.block {
+			
 			margin-bottom: 25px;
-			background: #394264;
+			background:white;
 			border-radius: 5px;
 		}
+
+		.block_nav {
+			margin-bottom: 25px;
+			background: white;
+			border-radius: 5px;
+		}
+
 		/******************************************** LEFT CONTAINER *****************************************/
 		.left-container {}
 			.menu-box {
@@ -710,7 +718,7 @@ h1, h2, p, a, span{
 			margin: 0 25px;			
 		}
 			.profile {
-				height: 410px;
+				height: 600px;
 			}
 				.add-button .icon {
 					float: right;
